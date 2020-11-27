@@ -12,8 +12,7 @@ base1<- subset(baseplot1,Date %in% c("1/2/2007","2/2/2007"))
 base1$Time <- strptime(paste(base1$Date,base1$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
 
 
-##Base Plot 3
-##save as png file format.
+##Base Plot 3and save as png file format.
 png("plot3.png", width=480, height=480)
 with(base1, {
   plot(base1$Time,as.numeric(base1$Sub_metering_1), type="l",
