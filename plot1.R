@@ -12,7 +12,7 @@ base1$Date <- as.Date( base1$Date, format= "%d%m%y")
 
 
 
-##Base Plot using histogram
+##Base Plot using histogram and save as png file format.
 png("plot1.png",width =480,height =480)
 hist(base1$Global_active_power, main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)", 
